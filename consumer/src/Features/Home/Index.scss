@@ -1,0 +1,114 @@
+@import "./../../Frameworks/Dimenshions/Dimenshion.scss";
+@import "./../../Frameworks/Mixins/Mixins.scss";
+.home__wrapper {
+    position: relative;
+}
+
+.Header__search {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: #17232b;
+    & .search__ {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        & input {
+            border-radius: calc(12 * #{$px});
+            height: calc(48 * #{$px});
+            outline: none;
+            @include mobile {
+                height: calc(130 * #{$px});
+            }
+        }
+        & input:focus {
+            border: calc(2 * #{$px}) solid #b0fbbc;
+            color: #b0fbbc;
+            background-color: transparent;
+        }
+        & .Input__wrapper {
+            color: #b0fbbc;
+        }
+        & button {
+            height: calc(48 * #{$px});
+            background-color: #b0fbbc;
+            color: linear-gradient(158.86deg, #1c2a34 10.36%, #111a20 49.58%, #111a20 0);
+            width: calc(140 * #{$px});
+            border: none;
+            border-radius: calc(12 * #{$px});
+            outline: none;
+            cursor: pointer;
+            @include mobile {
+                height: calc(130 * #{$px});
+                width: calc(340 * #{$px});
+            }
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10%;
+        }
+    }
+    @include mobile {
+        position: relative;
+    }
+}
+
+.__Gommt__welcome {
+    color: #b0fbbc;
+    margin-left: 5%;
+    @include mobile {
+        margin: 10%;
+        font-size: calc(28 * #{$px});
+    }
+}
+
+.__Grid__data {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    & .grid__item {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #1da1f2;
+        height: calc(500 * #{$px});
+        position: relative;
+        & button {
+            height: calc(48 * #{$px});
+            background-color: #b0fbbc;
+            color: linear-gradient(158.86deg, #1c2a34 10.36%, #111a20 49.58%, #111a20 0);
+            width: calc(240 * #{$px});
+            border: none;
+            border-radius: calc(12 * #{$px});
+            outline: none;
+            cursor: pointer;
+            @include mobile {
+                height: calc(130 * #{$px});
+                width: calc(640 * #{$px});
+            }
+        }
+        & img {
+            height: calc(300 * #{$px});
+        }
+        & .facilities {
+            display: grid;
+            grid-template-columns: auto auto;
+            p {
+                color: #ea4c89;
+            }
+        }
+        & .Money {
+            color: #ea4c89;
+            font-weight: bolder;
+            @include mobile {
+                top: calc(300 * #{$px});
+            }
+        }
+        @include mobile {
+            flex-direction: column;
+            height: calc(1700 * #{$px});
+        }
+    }
+}

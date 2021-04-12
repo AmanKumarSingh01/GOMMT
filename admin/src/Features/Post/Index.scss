@@ -1,0 +1,39 @@
+@import "./../../Frameworks/Fonts/Fonts.scss";
+@import "./../../Frameworks/Dimenshions/Dimenshions.scss";
+.__caption {
+    @extend .Body__caption;
+}
+
+.list {
+    position: relative;
+}
+
+.__post__property__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: calc(350 * #{$px});
+    padding: 1%;
+    border-radius: calc(18 * #{$px});
+    background-color: #fff;
+    & input {
+        width: 95%;
+        border-radius: calc(8 * #{$px});
+        outline: none;
+        border: calc(1 * #{$px}) solid #1f1f1f80;
+        height: calc(25 * #{$px});
+    }
+    input:focus {
+        color: #580880;
+        border: calc(1 * #{$px}) solid #580880;
+    }
+    & button {
+        margin-top: calc(30 * #{$px});  
+        background-color: #580880;
+        color: #fff;
+        border: none;
+        width: calc(160 * #{$px});
+        height: calc(48 * #{$px});
+        border-radius: calc(10 * #{$px});
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,13 @@
+@import "./Frameworks/Mixins/Mixins.scss";
+
+.App {
+  width: calc(min(150vh, 100vw));
+  margin: auto;
+  @include mobile {
+    width: 100%;
+  }
+}
+
+html {
+  background: #17232b;
+}

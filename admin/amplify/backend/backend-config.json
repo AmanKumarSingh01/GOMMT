@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "gommt121c2899": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

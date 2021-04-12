@@ -1,0 +1,7 @@
+@mixin mobile() {
+    @media only screen and (max-device-width: 1024px) and (orientation: portrait),
+        screen and (max-device-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+

@@ -1,0 +1,8 @@
+@function minx($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+$vww: minx(#{150vh}, #{100vw});
+$vhh: 100vh;
+$Width: 1440;
+$px: (1 /#{$Width}) * #{$vww};
+

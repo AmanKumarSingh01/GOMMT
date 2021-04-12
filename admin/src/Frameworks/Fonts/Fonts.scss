@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+@import "./../Dimenshions/Dimenshions.scss";
+.Body__Font__Primary {
+    font-family: Inter;
+    font-size: calc(16 * #{$px});
+    font-weight: 600;
+    line-height: calc(18 * #{$px});
+}
+
+.Body__caption {
+    font-family: Inter;
+    font-size: calc(10* #{$px});
+    font-weight: 600;
+    line-height: calc(12 * #{$px});
+    color: #580880;
+}
+
+.__Button__text {
+    font-family: Inter;
+    font-size: calc(10* #{$px});
+    font-weight: 600;
+    line-height: calc(12 * #{$px});
+    color: #580880;
+}

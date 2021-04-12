@@ -1,0 +1,45 @@
+@import "./../../Frameworks/Dimenshions/Dimenshions.scss";
+@import "./../../Frameworks/Fonts/Fonts.scss";
+.Layout__Mainpage {
+    // height: 100vh;
+    position: relative;
+    display: flex;
+    margin: 1%;
+}
+
+.sidebar {
+    width: 20%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: calc(18 * #{$px});
+    height: calc(920 * #{$px});
+}
+
+.sidebar h1 {
+    text-align: center;
+    margin-top: calc(50 * #{$px});
+}
+
+.sidebar a {
+    margin-left: calc(30 * #{$px});
+    margin-top: calc(50 * #{$px});
+    text-decoration: none;
+    color: #1a1d1e;
+    padding: 5%;
+
+    &.active {
+        background-color: #ec268f!important;
+        position: relative;
+        width: 70%;
+        border-radius: calc(8 * #{$px});
+        padding: 5%;
+    }
+}
+
+.__mainComponent__main {
+    padding-left: 2%;
+    padding-top: 1%;
+    flex-basis: 80%;
+}

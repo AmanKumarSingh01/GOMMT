@@ -1,0 +1,91 @@
+@import "./../../Frameworks/Fonts/Fonts.scss";
+@import "./../../Frameworks/Dimenshions/Dimenshions.scss";
+
+.__caption {
+    @extend .Body__caption;
+}
+
+.Home {
+    position: relative;
+}
+
+.__SLIDER {
+    height: calc(60 * #{$px});
+    padding: 1%;
+    background-color: #fff;
+    width: calc(350 * #{$px});
+    display: flex;
+    justify-content: space-around;
+    border-radius: calc(18 * #{$px});
+    & button {
+        width: calc(150 * #{$px});
+        @extend .__Button__text;
+        height: calc(60 * #{$px});
+        border-radius: calc(12 * #{$px});
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    & .active {
+        background-color: #580880;
+        color: white;
+    }
+}
+
+.table__home {
+    margin-top: calc(20 * #{$px});
+    & .table__head {
+        border-radius: calc(18 * #{$px});
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        color: #580880;
+        padding: 2%;
+        & #location {
+            flex-basis: 35%;
+        }
+        & #name {
+            flex-basis: 35%;
+        }
+        & #date {
+            flex-basis: 15%;
+        }
+        & #amount {
+            flex-basis: 15%;
+            color: green;
+        }
+    }
+
+    & .table__body {
+        border-radius: calc(18 * #{$px});
+        margin-top: calc(10 * #{$px});
+        margin-bottom: calc(10 * #{$px});
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        color: #580880;
+        padding: 2%;
+        & #location {
+            flex-basis: 35%;
+        }
+        & #name {
+            flex-basis: 35%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        & #date {
+            flex-basis: 15%;
+        }
+        & #amount {
+            flex-basis: 15%;
+            color: green;
+        }
+    }
+}
+
+
+.data {
+    overflow: auto;
+    height: calc(600 * #{$px});
+}

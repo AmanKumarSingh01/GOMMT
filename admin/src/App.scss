@@ -1,0 +1,24 @@
+@import "./Frameworks/Fonts/Fonts.scss";
+@import "./Frameworks/Dimenshions/Dimenshions.scss";
+.App {
+  width: calc(min(150vh, 100vw));
+  margin: auto;
+  @extend .Body__Font__Primary;
+}
+
+.Logo {
+  height: 4%;
+  text-align: center;
+}
+
+body {
+  background-color: #f5f8fa;
+}
+
+.divider {
+  width: 100%;
+  height: calc(5 * #{$px});
+  background-color: #e3e7ea;
+  margin-top: calc(30 * #{$px});
+  margin-bottom: calc(30 * #{$px});
+}
